@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71f57fa0-0021-47f1-9b96-8b6f541de8e4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/tortoise-biz/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tortoise-biz/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tortoise-biz/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tortoise-biz/target/tortoise-biz.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tortoise-biz/target/tortoise-biz/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tortoise-biz/target/tortoise-biz/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tortoise-common/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tortoise-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tortoise-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tortoise-common/target/tortoise-common-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tortoise-util/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tortoise-util/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tortoise-util/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tortoise-util/target/tortoise-util-1.0-SNAPSHOT.jar" beforeDir="false" />
-    </list>
+    <list default="true" id="71f57fa0-0021-47f1-9b96-8b6f541de8e4" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/tortoise-common/target/" />
@@ -72,17 +57,22 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6166" />
+            <state relative-caret-position="170">
+              <caret line="479" column="18" lean-forward="true" selection-start-line="479" selection-start-column="18" selection-end-line="479" selection-end-column="18" />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tortoise-util/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="7" selection-start-column="7" selection-end-column="7" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
@@ -108,6 +98,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/tortoise-biz/pom.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -171,26 +162,6 @@
             <path>
               <item name="tortoise" type="b2602c69:ProjectViewProjectNode" />
               <item name="tortoise" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tortoise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tortoise" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tortoise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tortoise" type="462c0819:PsiDirectoryNode" />
-              <item name="tortoise-biz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tortoise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tortoise" type="462c0819:PsiDirectoryNode" />
-              <item name="tortoise-common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tortoise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tortoise" type="462c0819:PsiDirectoryNode" />
-              <item name="tortoise-util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -273,15 +244,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584271222751</updated>
-      <workItem from="1584271224730" duration="964000" />
+      <workItem from="1584271224730" duration="1234000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="964000" />
+    <option name="totallyTimeSpent" value="1234000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1398" height="877" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
@@ -303,8 +275,8 @@
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32893" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.47952443" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.47952443" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Web" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" />
       <window_info id="Favorites" side_tool="true" />
@@ -397,7 +369,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6166" />
+        <state relative-caret-position="170">
+          <caret line="479" column="18" lean-forward="true" selection-start-line="479" selection-start-column="18" selection-end-line="479" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
       </provider>
     </entry>
   </component>
