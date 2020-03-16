@@ -12,6 +12,8 @@
         <module>tortoise-common</module>
         <module>tortoise-util</module>
         <module>tortoise-biz</module>
+        <module>tortoise-client</module>
+        <module>tortoise-server</module>
     </modules>
 
 

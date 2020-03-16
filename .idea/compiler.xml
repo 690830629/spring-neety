@@ -8,7 +8,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="tortoise-biz" />
+        <module name="tortoise-client" />
         <module name="tortoise-common" />
+        <module name="tortoise-server" />
         <module name="tortoise-util" />
       </profile>
     </annotationProcessing>
