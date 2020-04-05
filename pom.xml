@@ -14,10 +14,11 @@
         <module>tortoise-biz</module>
         <module>tortoise-client</module>
         <module>tortoise-server</module>
+        <module>tortoise-web</module>
     </modules>
 
     <properties>
-        <spring.version>4.3.17.RELEASE</spring.version>
+        <spring.version>5.2.4.RELEASE</spring.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -28,7 +29,11 @@
             </dependency>
 
             <!-- Spring Framework -->
-
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>19.0</version>
+            </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-core</artifactId>
