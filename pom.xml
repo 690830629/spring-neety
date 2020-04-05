@@ -18,10 +18,20 @@
     </modules>
 
     <properties>
-        <spring.version>5.2.4.RELEASE</spring.version>
+        <spring.version>4.3.17.RELEASE</spring.version>
     </properties>
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>4.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>18.0</version>
+            </dependency>
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
