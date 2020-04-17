@@ -1,17 +1,21 @@
 package com.wanglei.business.Util;
 
+import com.wanglei.business.Entity.Dog;
+
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class StringUtils {
     public static void main(String[] args) {
 
-        Double a=1.91;
-        Double b=0.31;
-        Double c=2.39;
-        System.out.println(a+b+c);
-        System.out.println(a+c+b);
-        System.out.println(new BigDecimal(a.toString()));
-        System.out.println(a.toString());
-        System.out.println(BigDecimal.valueOf(a.doubleValue()));
+
+        Map<Integer,String> map =new HashMap();
+        map.put(1,"1");
+
+
+
     }
 }
