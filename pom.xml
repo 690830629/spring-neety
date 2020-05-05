@@ -18,7 +18,7 @@
     </modules>
 
     <properties>
-        <spring.version>4.3.17.RELEASE</spring.version>
+        <spring.version>5.2.6.RELEASE</spring.version>
         <jackson.version>2.9.3</jackson.version>
     </properties>
     <dependencyManagement>
