@@ -18,7 +18,10 @@
         <!--</dependency>-->
         <!-- https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-all -->
 
-
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+        </dependency>
 
     </dependencies>
 

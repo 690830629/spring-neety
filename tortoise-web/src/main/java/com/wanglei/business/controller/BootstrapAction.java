@@ -1,6 +1,8 @@
 package com.wanglei.business.controller;
 
 import com.google.common.collect.Lists;
+import com.wanglei.business.thread.MyThread;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,6 +18,9 @@ public class BootstrapAction extends BaseAction {
 
 //    @Autowired
 //    private Student student;
+
+    @Autowired
+    private MyThread myThread;
 
     @RequestMapping(value = {"/test","test/ha"},method = RequestMethod.GET,produces =MediaType.APPLICATION_JSON_UTF8_VALUE )
     @ResponseBody
@@ -46,4 +51,14 @@ public class BootstrapAction extends BaseAction {
 
 
     }
+
+    @RequestMapping(value = "/test1" ,method = RequestMethod.GET,produces =MediaType.APPLICATION_JSON_UTF8_VALUE )
+    @ResponseBody
+    public void syncData() throws InterruptedException {
+        myThread.syncData();
+
+
+    }
+
+
 }

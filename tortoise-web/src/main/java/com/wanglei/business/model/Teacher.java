@@ -1,15 +1,10 @@
 package com.wanglei.business.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
-public class Student extends User {
-
-    private String name="学生";
+public class Teacher extends User {
+    private String name="老师";
 
     private Integer age;
 
@@ -18,4 +13,3 @@ public class Student extends User {
         return this.getName();
     }
 }
-

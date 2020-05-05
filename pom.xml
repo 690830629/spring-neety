@@ -19,7 +19,7 @@
 
     <properties>
         <spring.version>4.3.17.RELEASE</spring.version>
-        <jackson.version>2.5.4</jackson.version>
+        <jackson.version>2.9.3</jackson.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -104,13 +104,13 @@
             </dependency>
             <dependency>
                 <groupId>org.codehaus.jackson</groupId>
-                <artifactId>jackson-mapper-asl</artifactId>
-                <version>1.9.13</version>
+                <artifactId>jackson-core-asl</artifactId>
+                <version>1.9.7</version>
             </dependency>
             <dependency>
                 <groupId>org.codehaus.jackson</groupId>
-                <artifactId>jackson-core-asl</artifactId>
-                <version>1.9.13</version>
+                <artifactId>jackson-mapper-asl</artifactId>
+                <version>1.9.7</version>
             </dependency>
             <!--json-->
         </dependencies>
