@@ -11,6 +11,7 @@ public class User {
 
     private Integer height;
 
+
     public boolean isHeighter() {
         return this.height > 7;
     }

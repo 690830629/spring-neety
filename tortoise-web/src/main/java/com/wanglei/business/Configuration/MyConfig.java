@@ -12,6 +12,7 @@ public class MyConfig {
 
         Desk desk = new Desk();
         desk.setColor("red");
+        System.out.println("this is a desk Configuration" + desk.toString());
         return desk;
 
     }

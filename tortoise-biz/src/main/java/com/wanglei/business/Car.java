@@ -2,6 +2,8 @@ package com.wanglei.business;
 
 public class Car {
 
+    private String name;
+
     public static void main(String[] args) {
 
         Integer a=128;

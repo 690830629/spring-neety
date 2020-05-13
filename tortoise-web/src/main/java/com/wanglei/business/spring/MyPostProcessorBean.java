@@ -9,7 +9,6 @@ import org.springframework.stereotype.Component;
 @Data
 public class MyPostProcessorBean implements BeanPostProcessor {
 
-
     private volatile  int count=0;
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {

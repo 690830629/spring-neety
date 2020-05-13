@@ -1,6 +1,7 @@
 package com.wanglei.business.model;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Data
 public class Teacher extends User {

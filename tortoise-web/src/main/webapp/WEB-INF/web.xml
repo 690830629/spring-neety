@@ -4,12 +4,12 @@
 
 <web-app>
     <display-name>Archetype Created Web Application</display-name>
-    <!--<context-param>-->
-        <!--<param-name>contextConfigLocation</param-name>-->
-        <!--<param-value>-->
-            <!--classpath*:config/spring/applicationContext-client.xml,-->
-        <!--</param-value>-->
-    <!--</context-param>-->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>
+            classpath*:config/spring/applicationContext-client.xml,
+        </param-value>
+    </context-param>
 
     <filter>
         <filter-name>LogFilter</filter-name>
@@ -19,10 +19,19 @@
         <filter-name>LogFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
-    <!--<listener>-->
-    <!--<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>-->
-    <!--</listener>-->
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
     <servlet>
+        <servlet-name>myHttpServlet</servlet-name>
+        <servlet-class>com.wanglei.business.servlet.MyHttpServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>myHttpServlet</servlet-name>
+        <url-pattern>/doMyHttp</url-pattern>
+    </servlet-mapping>
+    <servlet>
+
 
         <servlet-name>myServlet</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -40,9 +49,9 @@
     </servlet-mapping>
 
 
-
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
+
 
 </web-app>
