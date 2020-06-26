@@ -9,7 +9,7 @@ public class ListUtil {
         for (int i = 0; i < 4; i++) {
             a.add(i);
         }
-        List<Integer> integerList = a.subList(0, 3);
+        List<Integer> integerList = a.subList(0, 10);
         System.out.println(integerList.toString());
 
     }

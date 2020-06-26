@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wanglei.business.dao.ProfessionIndexMapper">
+
+    <resultMap id="BaseResultMap" type="com.wanglei.business.model.ProfessionIndex">
+        <id column="Profession_IndexID" property="profession_IndexID" jdbcType="INTEGER"/>
+        <result column="ProjectID" property="projectId" jdbcType="INTEGER"/>
+        <result column="MaoYanIndex" property="maoYanIndex" jdbcType="INTEGER"/>
+        <result column="WechatIndex" property="weChatIndex" jdbcType="INTEGER"/>
+        <result column="MicroBlogIndex" property="microBlogIndex" jdbcType="INTEGER"/>
+        <result column="BaiduIndex" property="baiDuIndex" jdbcType="INTEGER"/>
+        <result column="CreateTime" property="createTime" jdbcType="TIMESTAMP"/>
+        <result column="UpdateTime" property="updateTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="base_Column_List">
+        ProjectID,MaoYanIndex,WechatIndex,MicroBlogIndex,BaiduIndex, CreateTime
+    </sql>
+
+
+    <select id="getByProjectIdAndCreateTime" resultMap="BaseResultMap">
+        select
+        <include refid="base_Column_List"/>
+        from Profession_Index
+        where
+        DATE_FORMAT(CreateTime,'%Y-%m-%d') = DATE_FORMAT(#{createTime,jdbcType=TIMESTAMP},'%Y-%m-%d')
+        and ProjectID=#{projectId,jdbcType=INTEGER}
+
+    </select>
+
+    <insert id="insert" parameterType="com.wanglei.business.model.ProfessionIndex">
+    insert into Profession_Index (ProjectID,MaoYanIndex, WechatIndex,
+      MicroBlogIndex,  BaiduIndex
+     )
+    values (#{projectId,jdbcType=INTEGER},#{maoYanIndex,jdbcType=INTEGER}, #{weChatIndex,jdbcType=INTEGER},
+      #{microBlogIndex,jdbcType=INTEGER},  #{baiDuIndex,jdbcType=INTEGER})
+  </insert>
+
+</mapper>

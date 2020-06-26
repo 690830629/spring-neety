@@ -3,6 +3,7 @@ package com.wanglei.business.Configuration;
 import com.wanglei.business.model.Desk;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.transaction.annotation.Transactional;
 
 @Configuration
 public class MyConfig {

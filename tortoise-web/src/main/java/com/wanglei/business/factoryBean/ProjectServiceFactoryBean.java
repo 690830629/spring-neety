@@ -1,11 +1,10 @@
-package com.wanglei.business.FactoryBean;
+package com.wanglei.business.factoryBean;
 
 import com.wanglei.business.proxy.JDKProxySubject;
 import com.wanglei.business.service.ProjectService;
 import com.wanglei.business.service.ProjectServiceImpl;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.InitializingBean;
-import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Proxy;
 

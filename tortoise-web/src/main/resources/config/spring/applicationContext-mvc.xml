@@ -20,7 +20,7 @@
         </mvc:message-converters>
 
     </mvc:annotation-driven>
-    <context:component-scan base-package="com.wanglei.business"/>
+    <context:component-scan base-package="com.wanglei"/>
     <mvc:interceptors>
         <mvc:interceptor>
             <mvc:mapping path="/**"/>
@@ -32,7 +32,7 @@
     <bean id="getBeanTest" class="com.wanglei.business.spring.GetBeanTest">
         <lookup-method name="getBean" bean="teacher"></lookup-method>
     </bean>
-    <bean id="projectService" class="com.wanglei.business.FactoryBean.ProjectServiceFactoryBean"></bean>
+    <bean id="projectService" class="com.wanglei.business.factoryBean.ProjectServiceFactoryBean"></bean>
 </beans>
 
 

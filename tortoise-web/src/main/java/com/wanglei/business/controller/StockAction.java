@@ -21,4 +21,11 @@ public class StockAction extends BaseAction {
         List<Integer> stockList = stockService.getStockList();
         return stockList;
     }
+
+    @RequestMapping("getStock1")
+    public List<Integer> getStock1List(Student student) {
+        System.out.println(student);
+        List<Integer> stockList = stockService.getStockList();
+        return stockList;
+    }
 }

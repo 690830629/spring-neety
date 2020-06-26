@@ -16,6 +16,7 @@
     </sql>
     <select id="getUserList" resultMap="result">
         <include refid="sql_select"/>
+
     </select>
 
 </mapper>

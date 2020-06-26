@@ -1,6 +1,7 @@
 package com.wanglei.business;
 
 import java.io.IOException;
+import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
@@ -17,7 +18,7 @@ public class NIOServer {
     public static void initServer() throws IOException {
         Selector selector = Selector.open();
         ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
-        InetSocketAddress inetSocketAddress = new InetSocketAddress(PORT);
+        InetSocketAddress inetSocketAddress = new InetSocketAddress(InetAddress.getLocalHost(),PORT);
         serverSocketChannel.configureBlocking(false);
         serverSocketChannel.bind(inetSocketAddress);
         serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
@@ -26,7 +27,6 @@ public class NIOServer {
             Iterator<SelectionKey> selectionKeyIterator = selectionKeySet.iterator();
             while (selectionKeyIterator.hasNext()) {
                 SelectionKey selectionKey = selectionKeyIterator.next();
-                selectionKeyIterator.remove();
                 if (selectionKey.isAcceptable()) {
                     System.out.println("客户端发起了连接");
                     ServerSocketChannel serverSocketChannel1 = (ServerSocketChannel) selectionKey.channel();
@@ -37,6 +37,8 @@ public class NIOServer {
                 if (selectionKey.isReadable()) {
                     System.out.println("客户端说了啥");
                 }
+                selectionKeyIterator.remove();
+
             }
 
         }
