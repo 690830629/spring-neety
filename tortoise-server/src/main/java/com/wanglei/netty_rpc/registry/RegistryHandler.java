@@ -89,6 +89,7 @@ public class RegistryHandler extends ChannelInboundHandlerAdapter {
             ctx.write(result);
             ctx.flush();
             ctx.close();
+            System.out.println("服务端计算结果"+result);
         }
         super.channelRead(ctx, msg);
     }
