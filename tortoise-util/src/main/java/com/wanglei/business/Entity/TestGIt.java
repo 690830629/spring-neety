@@ -6,5 +6,7 @@
  *
  * Author(s): INQ Team <iig_ipd_inq@qiyi.com>
  */
-package com.wanglei.business.Entity;public class TestGIt {
+package com.wanglei.business.Entity;
+
+public class TestGIt {
 }
