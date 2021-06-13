@@ -18,6 +18,9 @@
         <module>tortoise-web-noxml</module>
         <module>tortoise-jdk</module>
         <module>tortoise-algorithm</module>
+        <module>tortoise-log</module>
+        <module>tortoise-gupao</module>
+        <module>tortoise-aop</module>
     </modules>
 
     <properties>
