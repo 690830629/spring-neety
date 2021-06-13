@@ -11,6 +11,5 @@ package com.wanglei.business.Entity;
 public class R {
     public static void main(String[] args) {
         System.out.println("1");
-        System.out.println(1);
     }
 }
