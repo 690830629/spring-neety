@@ -16,6 +16,7 @@ public class TestAgent {
     public static void main(String[] args) {
         System.out.println("按数字键 1 调用测试方法");
         System.out.println("后写");
+        System.out.println(2);
         while (true) {
             Scanner reader = new Scanner(System.in);
             int number = reader.nextInt();
