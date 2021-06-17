@@ -10,5 +10,6 @@ public class MyApplicationContext {
         Car car = (Car) applicationContext.getBean("mycar");
         System.out.println(car);
         applicationContext.refresh();
+        System.out.println("落后一地点");
     }
 }
