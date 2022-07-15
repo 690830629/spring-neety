@@ -25,7 +25,7 @@
 
     <properties>
         <spring.version>4.3.17.RELEASE</spring.version>
-        <jackson.version>2.9.3</jackson.version>
+        <jackson.version>2.12.6.1</jackson.version>
     </properties>
     <dependencyManagement>
         <dependencies>
